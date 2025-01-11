@@ -23,8 +23,6 @@ io.on("connection", (socket) => {
 });
 
 app.get("/", (req, res) => {
-    //console.log("here");
-    //res.send("here");
     res.sendFile(path.join(__dirname, "/public", "index.html"));
 });
 
